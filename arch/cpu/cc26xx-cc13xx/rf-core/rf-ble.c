@@ -64,9 +64,13 @@
 #endif
 /*---------------------------------------------------------------------------*/
 /* BLE Intervals: Send a burst of advertisements every BLE_ADV_INTERVAL secs */
-#define BLE_ADV_INTERVAL      (CLOCK_SECOND * 5)
+#ifndef BLE_ADV_INTERVAL
+  #define BLE_ADV_INTERVAL      (CLOCK_SECOND * 5)
+#endif
 #define BLE_ADV_DUTY_CYCLE    (CLOCK_SECOND / 10)
-#define BLE_ADV_MESSAGES      10
+#ifndef BLE_ADV_MESSAGES
+  #define BLE_ADV_MESSAGES      10
+#endif
 
 /* BLE Advertisement-related macros */
 #define BLE_ADV_TYPE_DEVINFO      0x01

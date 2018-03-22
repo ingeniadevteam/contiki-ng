@@ -39,5 +39,9 @@
 #define RF_CORE_CONF_CHANNEL                 25
 #define RF_BLE_CONF_ENABLED                   1
 /*---------------------------------------------------------------------------*/
+/* Custom configuration */
+#define BLE_ADV_INTERVAL      (CLOCK_SECOND * 30)
+#define BLE_ADV_MESSAGES      1
+/*---------------------------------------------------------------------------*/
 #endif /* PROJECT_CONF_H_ */
 /*---------------------------------------------------------------------------*/
